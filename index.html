@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="wrong">
+  <h1 id="level-title" class="mario">Press Any Key/Click Anywhere to Start</h1>
+
+  <audio src="sounds/blue.mp3" preload>This web browser does not support mp3 format</audio>
+  <audio src="sounds/green.mp3" preload></audio>
+  <audio src="sounds/red.mp3" preload></audio>
+  <audio src="sounds/yellow.mp3" preload></audio>
+  <audio src="sounds/wrong.mp3" preload></audio>
+
+  <div id = "gamebox" class="container">
+
+      <div type="button" id="green" class="btn green"><span>Q</span></div>
+
+      <div type="button" id="red" class="btn red"><span>E</span></div>
+
+      <div type="button" id="yellow" class="btn yellow"><span>A</span></div>
+
+      <div type="button" id="blue" class="btn blue"><span>D</span></div>
+  </div>
+
+</body>
+
+<h2 class="mario">How To Play</h2>
+
+<p>Press any key/ click anywhere to start the Game. The Skill Level increases by one each time.</p>
+<p>Simon will give the first signal by pressing a button. Repeat the signal by pressing the same color button or the key that is written on it.</p>
+<p>Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color button in the same order.</p>
+<p>Simon will duplicate these first two signals and add one. Similarly the game will keep adding a signal each time you clear a level.</p>
+<p>Continue playing as long as you can repeat each sequence of signals correctly. After the 5th, 9th and 13th signals in a sequence, Simon automatically speeds up.</p>
+<p>If you fail to repeat a sequence exactly, Simon responds with a "RAZZ" sound. This means you've lost, and the sequence of signals ends.</p><!-- or if you take more than 5 seconds to repeat a signal, -->
+<script src = "game.js" type="text/javascript"></script>
+
+<h2 class="mario">Made By Akhilesh</h2>
+
+</html>

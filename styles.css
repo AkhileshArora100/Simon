@@ -1,0 +1,111 @@
+@font-face {
+  font-family: montaga;
+  src: url('font/Montaga-Regular.ttf');
+}
+@font-face {
+  font-family: marioPixel;
+  src: url('font/PressStart2P-Regular.ttf');
+}
+body {
+  text-align: center;
+  touch-action: manipulation;
+  background-color: #011F3F;
+  font-family: montaga;
+  color: white;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+p{
+  width: 70%;
+  margin: auto;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+span{
+  font-size: 12vw;
+  -webkit-text-stroke: 2px black;
+}
+
+#level-title {
+  margin:  5%;
+}
+
+.mario{
+  font-size: 3rem;
+  font-family: marioPixel, cursive;
+  color: #FEF2BF;
+  margin: 5% auto;
+  line-height: 1.5;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 2vw;
+  display: inline-block;
+  height: 16vw;
+  width: 16vw;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media only screen and (max-width: 600px){
+  .mario{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 824px) {
+  .mario{
+    font-size: 2.5rem;
+  }
+}
+
+@media (orientation: portrait){
+  .container{
+    width: 80%;
+  }
+  span{
+    font-size: 18vw;
+  }
+  .btn {
+    height: 24vw;
+    width: 24vw;
+ }
+}
